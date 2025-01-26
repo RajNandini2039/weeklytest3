@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Flexbox for side-by-side layout */
+    margin: 0;
+    padding: 0;
+    height: 90vh; /* Adjusted height to match the image */
+}
+
+/* Left panel styling */
+.left-panel {
+    width: 30%; /* Takes 30% of the width */
+    border-left: 3px solid #cccccc57; /* Greyish left border */
+    border-top: 3px solid #cccccc57; /* Greyish top border */
+    border-right: 3px solid #cccccc57; /* Greyish right border */
+    border-bottom: none; /* No bottom border */
+    padding: 4px; /* Reduced padding to bring content closer to the scroll bar */
+    margin-right: 10px; /* Adds space between left panel and iframe container */
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    box-sizing: border-box; /* Includes padding in height calculation */
+}
+
+.left-panel h5 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.left-panel a {
+    display: block;
+    margin-bottom: 15px; /* Reduced margin for better spacing */
+    text-decoration: none;
+    color: #000;
+}
+
+.left-panel img {
+    width: 95%; /* Slightly smaller images for better fit */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space between images and text */
+}
+
+/* Right panel styling (iframe container) */
+.right-panel {
+    width: 69%; /* Adjusted width to account for the space added by margin-right on the left panel */
+    border-left: 3px solid #cccccc57; /* Greyish left border for iframe container */
+    border-top: 3px solid #cccccc57; /* Greyish top border for iframe container */
+    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+}
+
+iframe {
+    width: 100%;
+    height: 100%; /* Matches the height of the right panel */
+    border: none; /* Removes default iframe borders */
+}
